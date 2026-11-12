@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background: #fcf8f5;
+  color: #260f08;
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.shop-layout {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 24px;
+}
+
+.product-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cart {
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+@media (min-width: 900px) {
+  .shop-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+}
